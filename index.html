@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalBoost - Web Design & Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #121212;
+            color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0,0,0,0.7);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-btn {
+            padding: 10px 20px;
+            background: #ff4b2b;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background: #ff6f61;
+        }
+        .section {
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background: #1f1f1f;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        .section img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .section .text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .section .text h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .section .text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .section .text .contact-btn {
+            margin-top: 20px;
+        }
+        footer {
+            background: rgba(0,0,0,0.9);
+            padding: 50px 20px 30px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+        }
+        footer h4 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        footer p {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            header, .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DigitalBoost</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Upcoming</a>
+            <button class="contact-btn" onclick="openWhatsApp()">Contact</button>
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="text">
+            <h2>Welcome to DigitalBoost</h2>
+            <p>We specialize in creating cutting-edge, responsive websites that not only look stunning but also drive conversions. Whether you need a personal portfolio or a corporate website, we've got you covered.</p>
+            <button class="contact-btn" onclick="openWhatsApp()">Contact Us</button>
+        </div>
+        <img src="images/web design.jpg" alt="Web Design">
+    </div>
+
+    <div class="section">
+        <img src="images/bussiness.jpg" alt="Business Success">
+        <div class="text">
+            <h2>What Can You Achieve With Your Website?</h2>
+            <p>✔ Establish a strong online presence<br>
+               ✔ Engage and convert your audience<br>
+               ✔ Showcase your business to a global market<br>
+               ✔ Build credibility with a professional website<br>
+               ✔ Improve your SEO rankings and online visibility</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <h2>"Your Website is Your Digital Identity — Make it Stand Out!"</h2>
+            <p>Let us help you create a website that speaks volumes about your business. Whether you need a sleek corporate site or a creative portfolio, we're here to deliver excellence.</p>
+            <button class="contact-btn" onclick="openWhatsApp()">Contact Now</button>
+            <button class="contact-btn" onclick="openWhatsApp()">Free Consultation</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h4>Services</h4>
+            <a href="#">Custom Web Design</a>
+            <a href="#">SEO Optimization</a>
+            <a href="#">E-commerce Solutions</a>
+            <a href="#">Branding & Identity</a>
+            <a href="#">Digital Marketing</a>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <a href="#">Services</a>
+            <a href="#">Locations</a>
+            <a href="#">About Us</a>
+        </div>
+        <div>
+            <h4>Global</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div>
+            <h4>Upcoming</h4>
+            <a href="#">Your Company 2</a>
+        </div>
+        <p>&copy; 2024 DigitalBoost. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openWhatsApp() {
+            window.open('https://wa.me/919876543210', '_blank');
+        }
+    </script>
+</body>
+</html>
