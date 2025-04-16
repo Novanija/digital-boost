@@ -9,8 +9,7 @@
 
 📸 Live Demo
 
-https://novanija.github.io/digital-boost
-
+https://novanija.github.io/digital-boost/
 
 ✨ Features
 
